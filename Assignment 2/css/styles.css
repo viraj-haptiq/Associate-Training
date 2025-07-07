@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #21243d;
+  font-family: "Heebo", sans-serif;
+}
+
+/* Navbar */
+header {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  margin-bottom: 140px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+.logo {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  white-space: nowrap;
+}
+.navContainer {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navContainer a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+}
+
+/* Main container */
+.mainContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Sections */
+.container {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+/* Hero */
+.heroContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.textContent h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.hero .paragraphWrapper {
+  margin-bottom: 40px;
+}
+
+.hero .paragraphWrapper {
+  max-width: 500px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.resumeBtn {
+  padding: 10px 20px;
+  background-color: #ff6a6a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.imageWrapperHero {
+  width: 243px;
+  height: 243px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 30px 30px #edf7fa; /* <-- Add this */
+}
+
+.imageWrapperFeaturedWork {
+  width: 246px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.imageWrapperHero img,
+.imageWrapperFeaturedWork img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Recent Posts */
+.recentPosts {
+  background-color: #edf7fa;
+  padding: 60px 0;
+  width: 100%;
+}
+
+.recentPosts .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sectionHeader h2 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.sectionHeader a {
+  text-decoration: none;
+  color: #00a8cc;
+}
+
+.posts {
+  /* display: flex; */
+  gap: 20px;
+}
+
+.postCard {
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.postCard a {
+  font-size: 26px;
+  font-weight: 700;
+  /* margin-bottom: 17px; */
+  margin-bottom: 18px;
+  text-decoration: none;
+  color: #000000;
+}
+.cardList {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+}
+
+.mainSpan {
+  margin-bottom: 17px;
+}
+.postCard span {
+  font-size: 18px;
+  font-weight: 400;
+  /* margin-bottom: 11px; */
+}
+.smallLine {
+  padding: 0 30px;
+}
+
+.postCard.paragraphWrapper p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Featured Works */
+.featuredWorks .workCard {
+  display: flex;
+  gap: 20px;
+}
+
+.featuredWorks {
+  margin-bottom: 83px;
+}
+
+.workCard {
+  margin-bottom: 35px;
+}
+
+.featuredWorks h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 22px;
+}
+
+.workInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.workInfo a {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.badge {
+  background-color: #142850;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.category {
+  color: gray;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.metaInfo {
+  margin-bottom: 10px;
+}
+
+.footerIcons {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.footerIcons img {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+hr {
+  color: #e0e0e0;
+  margin-bottom: 35px;
+  height: 1px;
+}
