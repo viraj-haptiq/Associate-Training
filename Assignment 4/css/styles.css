@@ -342,9 +342,9 @@ header .container {
   padding: 20px;
   color: white;
   background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.6) 60%,
-    rgba(0, 0, 0, 0) 100%
+    180deg,
+    rgba(0, 0, 0, 0) 14.58%,
+    rgba(56, 56, 56, 0.84) 100%
   );
   width: 100%;
   text-align: left;
