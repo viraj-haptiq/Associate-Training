@@ -25,7 +25,7 @@ header .container {
   justify-content: space-between;
 }
 
-.nav-left {
+.navLeft {
   display: flex;
   align-items: center;
   gap: 41px;
@@ -38,20 +38,20 @@ header .container {
   text-decoration: none;
 }
 
-.nav-links {
+.navLinks {
   display: flex;
   list-style: none;
   gap: 30px;
 }
 
-.nav-links a {
+.navLinks a {
   text-decoration: none;
   color: white;
   font-weight: 500;
   font-size: 14px;
 }
 
-.auth-buttons {
+.authButtons {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -63,7 +63,7 @@ header .container {
   font-weight: 600;
 }
 
-.cta-button {
+.ctaButton {
   background-color: #1da1f2;
   color: white;
   padding: 15px 25px;
@@ -86,6 +86,7 @@ header .container {
   margin-top: -120px;
   text-align: center;
 }
+
 .banner .container {
   max-width: 1200px;
   display: flex;
@@ -96,7 +97,7 @@ header .container {
   margin: 0 auto;
 }
 
-.banner-content h1 {
+.bannerContent h1 {
   font-size: 58px;
   font-weight: 800;
   margin-bottom: 20px;
@@ -105,14 +106,14 @@ header .container {
   letter-spacing: 0.2px;
 }
 
-.banner-content p {
+.bannerContent p {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 32px;
   color: #ffffff;
 }
 
-.banner-buttons {
+.bannerButtons {
   display: flex;
   gap: 16px;
 }
@@ -188,10 +189,6 @@ header .container {
   letter-spacing: 0.2px;
 }
 
-.industryTestimonials .container {
-  max-width: 1200px;
-}
-
 .industryTestimonials {
   text-align: center;
   background-color: #8ec2f2;
@@ -205,6 +202,7 @@ header .container {
 .sectionHeader {
   padding: 112px 268.5px 80px 268.5px;
 }
+
 .sectionHeader .title {
   color: #ffffff;
   text-transform: uppercase;
@@ -223,23 +221,26 @@ header .container {
   line-height: 20px;
   letter-spacing: 0.2px;
 }
+
 .testimonialCards {
   display: flex;
   gap: 30px;
   justify-content: center;
   padding: 0px 0px 112px 0px;
 }
-.outer-testimonial-card {
+
+.outerTestimonialCard {
   padding: 0 24px;
 }
-.testimonial-card {
+
+.testimonialCard {
   background-color: white;
   padding: 40px 24px 32.99px 92px;
   position: relative;
   text-align: left;
 }
 
-.profile-img {
+.profileImg {
   width: 72px;
   height: 72px;
   border-radius: 50%;
@@ -249,7 +250,7 @@ header .container {
   object-fit: cover;
 }
 
-.testimonial-content h3 {
+.testimonialContent h3 {
   margin-bottom: 4px;
   font-size: 24px;
   font-weight: 700;
@@ -272,7 +273,7 @@ header .container {
   margin-bottom: 15px;
 }
 
-.testimonial-text {
+.testimonialText {
   font-size: 14px;
   font-weight: 500;
   color: #737373;
@@ -290,6 +291,12 @@ header .container {
   margin: 0 auto;
   text-align: center;
 }
+
+.sectionHeaderProjects {
+  padding-top: 112px;
+  padding-bottom: 96px;
+}
+
 .sectionHeaderProjects .title {
   color: #ffffff;
   text-transform: uppercase;
@@ -308,10 +315,7 @@ header .container {
   line-height: 20px;
   letter-spacing: 0.2px;
 }
-.sectionHeaderProjects {
-  padding-top: 112px;
-  padding-bottom: 96px;
-}
+
 .projectCards {
   display: flex;
   gap: 21px;
@@ -320,23 +324,21 @@ header .container {
   padding: 0px 15px 112px 15px;
 }
 
-.project-card {
+.projectCard {
   position: relative;
-  width: 270px;
-  height: 300px;
-  overflow: hidden;
-  height: 452px;
   width: 322px;
+  height: 452px;
+  overflow: hidden;
 }
 
-.project-card img {
+.projectCard img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.card-content {
+.cardContent {
   position: absolute;
   bottom: 0;
   padding: 20px;
@@ -350,7 +352,7 @@ header .container {
   text-align: left;
 }
 
-.card-content .tag {
+.cardContent .tag {
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
@@ -359,7 +361,7 @@ header .container {
   opacity: 0.9;
 }
 
-.card-content .title {
+.cardContent .title {
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
@@ -367,7 +369,7 @@ header .container {
   margin-bottom: 15px;
 }
 
-.project-btn {
+.projectBtn {
   display: inline-block;
   padding: 10px 20px;
   background-color: #23a6f0;
@@ -380,6 +382,7 @@ header .container {
   line-height: 22px;
   letter-spacing: 0.2px;
 }
+
 .footer {
   background-color: #252b42;
 }
@@ -388,6 +391,7 @@ header .container {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .footerItems {
   display: flex;
   flex-wrap: wrap;
@@ -426,20 +430,22 @@ header .container {
 .footerItems ul.contact i {
   margin-right: 8px;
 }
+
 .footerItemsTitle {
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.1px;
 }
+
 .footerCopyright {
   background-color: #f4f4f4;
   padding: 25px 0px;
   font-size: 14px;
   color: #737373;
-
   flex-wrap: wrap;
 }
+
 .footerCopyright .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -458,9 +464,11 @@ header .container {
   align-items: center;
   gap: 15px;
 }
+
 .footerCopyright .socials a {
   color: #0d99ff;
 }
+
 .footerCopyright p {
   font-size: 14px;
   font-weight: 600;
