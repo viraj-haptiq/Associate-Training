@@ -429,6 +429,7 @@ header .container {
 
 .footerItems ul.contact i {
   margin-right: 8px;
+  text-decoration: none;
 }
 
 .footerItemsTitle {
