@@ -983,7 +983,7 @@ header .container {
     padding: 75px auto 80px auto;
   }
   .sectionHeader {
-    padding: 45px 20px 60px 20px;
+    padding: 50px;
   }
 
   .sectionHeader .title {
@@ -1061,7 +1061,7 @@ header .container {
     padding: 30px auto 52px auto;
   }
   .sectionHeaderProjects {
-    padding: 50px 20px 50px 20px;
+    padding: 50px;
     text-align: center;
   }
 
