@@ -913,10 +913,11 @@ header .container {
   .banner .container {
     padding-left: 20px;
     padding-right: 20px;
+    text-align: center;
   }
 
   .bannerContent h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     line-height: 57px;
     letter-spacing: 0.2px;
@@ -929,7 +930,10 @@ header .container {
   }
 
   .bannerButtons {
+    flex-direction: column;
     gap: 12px;
+    padding-left: 114.5px;
+    padding-right: 114.5px;
   }
 
   .quoteBtn,
