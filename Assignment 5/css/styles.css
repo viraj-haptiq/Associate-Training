@@ -1,0 +1,577 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #21243d;
+  font-family: "Heebo", sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 27px 30px;
+  margin-bottom: 140px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.navList {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navList a {
+  margin-left: 75px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  align-content: center;
+}
+
+.banner .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.bannerTextContent h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.banner .bannerParagraph {
+  margin-bottom: 40px;
+  max-width: 500px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.resumeBtn {
+  padding: 10px 20px;
+  background-color: #ff6a6a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.imageWrapperHero {
+  width: 243px;
+  height: 243px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0 30px 30px #edf7fa;
+  transform: translateY(-70px);
+}
+
+.imageWrapperHero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bannerTextContent {
+  margin-bottom: 71px;
+}
+
+.recentPosts {
+  background-color: #edf7fa;
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.recentPosts .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.sectionHeader {
+  padding-top: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.sectionHeader h4 {
+  line-height: 60px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.sectionHeader a {
+  text-decoration: none;
+  color: #00a8cc;
+}
+
+.posts {
+  gap: 20px;
+}
+
+.cardList {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+}
+
+.postCard {
+  background-color: #ffffff;
+  padding: 24px 21px 34px 23px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.postCard a {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  text-decoration: none;
+  color: #000000;
+  line-height: 100%;
+}
+
+.postDateAndCategory {
+  margin-bottom: 17px;
+}
+
+.postCard span {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.smallLine {
+  padding: 0 30px;
+}
+
+.postCard .postParagraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0px;
+}
+
+.featuredWorks .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-bottom: 83px;
+}
+
+.featuredWorks h4 {
+  font-size: 22px;
+  font-weight: 400;
+  padding-top: 15px;
+  padding-bottom: 22px;
+  line-height: 60px;
+  color: #21243d;
+}
+
+.workCard {
+  display: flex;
+  gap: 20px;
+  padding: 35px auto;
+}
+
+.featuredWorks li {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 35px;
+  margin-bottom: 35px;
+}
+
+.imageWrapperFeaturedWork {
+  width: 246px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.imageWrapperFeaturedWork img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.workInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.workInfo a {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-decoration: none;
+  color: #000000;
+  line-height: 100%;
+}
+
+.badge {
+  background-color: #142850;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 16px;
+  font-size: 18px;
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.category {
+  color: #8695a4;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.metaInfo {
+  margin-bottom: 22px;
+}
+
+.cardList,
+.workList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.workInfo .postParagraph p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.workListli {
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 51px auto 54px auto;
+  text-align: center;
+}
+
+.footerIcons {
+  text-align: center;
+  padding-top: 51px;
+  margin-bottom: 26px;
+}
+
+.footerIcons img {
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 54px;
+}
+
+@media (max-width: 1249px) {
+  header {
+    padding: 27px 0px;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cardList {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    align-items: stretch;
+  }
+
+  .cardList li {
+    flex: 1;
+    display: flex;
+  }
+
+  .postCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    padding: 27px 0px;
+    margin-bottom: 33px;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .cardList {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+    align-items: stretch;
+  }
+
+  .cardList li {
+    flex: 1;
+    display: flex;
+  }
+
+  .postCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    padding: 27px 0px;
+    margin-bottom: 33px;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .navList a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    margin-left: 25px;
+    align-content: center;
+  }
+  .logo {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .banner .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px 20px;
+    gap: 30px;
+  }
+
+  .imageWrapperHero {
+    margin: 0 auto;
+    width: 174.38px;
+    height: 180px;
+    order: -1;
+    margin-bottom: 34px;
+    transform: translateY(10px);
+  }
+
+  .bannerTextContent {
+    order: 0;
+    margin-bottom: 0px;
+  }
+
+  .bannerTextContent h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-bottom: 21px;
+  }
+
+  .banner .bannerParagraph p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    color: #6d6d6d;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .resumeBtn {
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    background-color: #ff6a6a;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 59px;
+  }
+
+  .cardList {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sectionHeader a {
+    display: none;
+  }
+
+  .sectionHeader {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 30px auto;
+  }
+
+  .sectionHeader h4 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+
+  .postCard {
+    padding: 12px 21px 22px 19px;
+  }
+
+  .postCard a {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 12px;
+  }
+
+  .postDateAndCategory {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    margin-bottom: 19px;
+    gap: 24px;
+  }
+
+  .postCard .postParagraph p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  .featuredWorks .container {
+    padding: 0px 20px;
+  }
+
+  .featuredWorks {
+    margin-bottom: 100px;
+  }
+
+  .featuredWorks ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .featuredWorks li {
+    list-style: none;
+  }
+
+  .featuredWorks h4 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 16px;
+    padding-top: 32.5px;
+    padding-bottom: 32.5px;
+  }
+
+  .workCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .imageWrapperFeaturedWork {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  .imageWrapperFeaturedWork img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .workInfo a {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #21243d;
+    text-decoration: none;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+
+  .metaInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .badge {
+    padding: 0px 12px;
+    border-radius: 20px;
+    background-color: #142850;
+  }
+
+  span .badge {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+  }
+
+  .category {
+    font-size: 14px;
+    color: #6d6d6d;
+  }
+
+  .workCard .postParagraph p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 17px;
+  }
+}
