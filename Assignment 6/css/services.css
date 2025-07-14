@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 1180px;
+  max-width: 1212px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -71,7 +71,7 @@ body {
   letter-spacing: 0px;
 }
 .pricingSection .container {
-  max-width: 1180px;
+  max-width: 1212px;
   padding: 0 16px;
   margin: 0 auto;
   text-align: center;
