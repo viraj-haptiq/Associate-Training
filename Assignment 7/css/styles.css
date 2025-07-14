@@ -1,0 +1,16 @@
+.navbar {
+  background-color: #74c69d;
+}
+.navbar-brand span {
+  color: white;
+}
+.nav-link {
+  color: #ffffff;
+}
+.banner,
+.footer {
+  background-color: #74c69d;
+}
+h6 {
+  color: #74c69d;
+}
