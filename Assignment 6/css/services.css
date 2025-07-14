@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.navbar {
+  background-color: #6dd5a3;
+}
+.navbar .container {
+  padding: 35px 20px 40px 20px;
+  margin-bottom: 35px;
+}
+
+.navbarNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarLogo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbarLogoImage {
+  width: 70px;
+  height: 48.31px;
+  margin-right: 10px;
+}
+.navbarLogo span {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0px;
+}
+.hamburger {
+  display: none;
+}
+.navbarMenu {
+  display: flex;
+  list-style: none;
+}
+.navbarMenu li {
+  padding-left: 30px;
+}
+.navbarMenu li:first-child {
+  padding-left: 0;
+}
+
+.navbarMenu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: 0px;
+}
+.pricingSection .container {
+  max-width: 1180px;
+  padding: 0 16px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 135px;
+}
+
+.pricingHeader {
+  margin-bottom: 78px;
+}
+
+.pricingLabel {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 125%;
+  color: #74c69d;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.pricingTitle {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 125%;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.pricingDescription {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 400;
+  line-height: 125%;
+}
+
+.pricingCards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  gap: 20px;
+}
+
+.pricingCard {
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  padding: 46px 30px;
+  width: 100%;
+  max-width: 350px;
+  color: #000000;
+  text-align: center;
+}
+
+.planName {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 125%;
+  color: #000000;
+  /* margin-bottom: 16px; */
+}
+
+.planPrice {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 125%;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.planPrice span {
+  font-size: 15px;
+  font-weight: 400;
+  color: #21252980;
+  margin-left: 9px;
+}
+
+.planText {
+  font-size: 15px;
+  font-weight: 400;
+
+  color: #21252980;
+  line-height: 125%;
+  margin-bottom: 52px;
+}
+
+.planFeatures {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 31px;
+  text-align: left;
+}
+
+.planFeatures li {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 125%;
+  color: #212529;
+  margin-bottom: 14px;
+  position: relative;
+  padding-left: 11px;
+}
+
+.planBtn {
+  display: inline-block;
+  background-color: #212529;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 4px;
+  line-height: 125%;
+  padding: 13px 29.5px 10px 29.5px;
+}
+.footer {
+  background-color: #74c69d;
+  padding: 30px 0;
+  color: #fff;
+}
+
+.footer .container {
+  padding: 0 16px;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 51px auto 49px auto;
+}
+
+.socialList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.socialList li {
+  padding-right: 20px;
+}
+.socialList li:last-child {
+  padding-right: 0;
+}
+
+.socialList li a img {
+  display: block;
+}
+
+.footerCopyright {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .navbar .container {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .navbarMenu {
+    display: none;
+  }
+  .navbarNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbarLogo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .navbarLogoImage {
+    width: 45px;
+    height: 31.06px;
+    margin-right: 10px;
+  }
+
+  .navbarLogoImage img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .navbarLogo span {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 125%;
+    letter-spacing: 0px;
+  }
+
+  .hamburger {
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .hamburger img {
+    width: 24px;
+    height: 24px;
+  }
+  .pricingSection .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .pricingHeader {
+    margin-bottom: 46px;
+  }
+  .pricingTitle {
+    font-size: 24px;
+  }
+
+  .pricingDescription {
+    font-size: 20px;
+    line-height: 125%;
+  }
+
+  .pricingCards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .pricingCard {
+    width: 100%;
+    max-width: 100%;
+    padding: 46px 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .planName {
+    font-size: 15px;
+  }
+
+  .planPrice {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+
+  .planPrice span {
+    font-size: 14px;
+    margin-left: 4px;
+  }
+
+  .planText {
+    font-size: 13px;
+    margin-bottom: 52px;
+  }
+
+  .planFeatures {
+    margin-bottom: 24px;
+    padding-left: 0;
+  }
+
+  .planFeatures li {
+    font-size: 15px;
+    margin-bottom: 11px;
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .planBtn {
+    font-size: 18px;
+    padding: 13px 30px 10px 30px;
+  }
+  footer .container {
+    padding: 31px auto;
+  }
+  .footerWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .socialList {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  .footerCopyright {
+    font-size: 20px;
+  }
+}

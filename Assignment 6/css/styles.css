@@ -1,0 +1,738 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.navbar {
+  background-color: #6dd5a3;
+}
+.navbar .container {
+  padding: 35px 20px 40px 20px;
+}
+
+.navbarNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarLogo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbarLogoImage {
+  width: 70px;
+  height: 48.31px;
+  margin-right: 10px;
+}
+.navbarLogo span {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 125%;
+  letter-spacing: 0px;
+}
+.hamburger {
+  display: none;
+}
+.navbarMenu {
+  display: flex;
+  list-style: none;
+}
+.navbarMenu li {
+  padding-left: 30px;
+}
+.navbarMenu li:first-child {
+  padding-left: 0;
+}
+
+.navbarMenu li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: 0px;
+}
+
+.banner {
+  background-color: #6dd5a3;
+}
+.banner .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 16px;
+  padding-bottom: 82.87px;
+  margin-bottom: 60px;
+}
+
+.bannerTextContent {
+  flex: 1 1 50%;
+  padding-right: 120px;
+  padding: 39.57px 120px 39.57px 0px;
+}
+
+.bannerWelcome {
+  letter-spacing: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 125%;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.bannerHeading {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 0px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.bannerDescription {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 25px;
+  letter-spacing: 0px;
+  line-height: 125%;
+}
+
+.bannerExploreBtn {
+  display: inline-block;
+  padding: 13px 47.5px 10px 48.5px;
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%;
+  border-radius: 5px;
+}
+
+.bannerIllustration {
+  flex: 1 1 45%;
+  text-align: center;
+  width: 644.28px;
+  height: 378.13px;
+}
+
+.bannerIllustration img {
+  max-width: 100%;
+}
+
+.partnersSection .container {
+  padding: 0px 16px;
+  text-align: center;
+  color: #111;
+  margin-bottom: 73px;
+}
+
+.partnersHeader {
+  margin-bottom: 40px;
+  padding: 0px 0px;
+  margin-bottom: 55px;
+}
+
+.partnersLabel {
+  color: #74c69d;
+  letter-spacing: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 125%;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.partnersTitle {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 0px;
+  margin-bottom: 16px;
+  color: #000000;
+}
+
+.partnersDescription {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.partnersLogos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+}
+
+.partnersLogos img {
+  max-height: 40px;
+  object-fit: contain;
+}
+
+.partnersButtonWrapper {
+  text-align: center;
+}
+
+.partnersLearnMoreBtn {
+  display: inline-block;
+  padding: 13px 29.5px 10px 29.5px;
+  background-color: #212529;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  border-radius: 4px;
+}
+
+.contentSection .container {
+  padding: 0px 16px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 112.27px;
+}
+
+.contentBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 73.57px;
+}
+
+.contentBlock.reverse {
+  flex-direction: row-reverse;
+  margin-bottom: 0px;
+}
+
+.contentImage1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-right: 110px;
+  width: 600px;
+  height: 431.43px;
+}
+
+.contentImage1 img {
+  max-width: 100%;
+  height: 100%;
+}
+.contentImage2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 110px;
+  width: 600px;
+  height: 431.43px;
+}
+
+.contentImage2 img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.contentText {
+  flex: 1 1 45%;
+  padding: 88.22px 0px;
+}
+
+.contentTitle {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 125%;
+  margin-bottom: 16px;
+  color: #212529;
+}
+
+.contentDescription {
+  font-size: 15px;
+  font-weight: 400;
+  color: #21252980;
+  margin-bottom: 16px;
+  line-height: 125%;
+}
+
+.contentBtn {
+  display: inline-block;
+  padding: 13px 29.5px 10px 29.5px;
+  background-color: #212529;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+.teamSection .container {
+  padding: 0px 16px;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.teamHeader {
+  margin-bottom: 45px;
+}
+.teamLabel {
+  color: #74c69d;
+  font-size: 16px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  height: 125%;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.teamTitle {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 125%;
+  margin-bottom: 16px;
+  color: #212529;
+}
+
+.teamDescription {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 125%;
+  letter-spacing: 0px;
+}
+
+.teamList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 45px;
+  gap: 10px;
+}
+
+.teamCard {
+  background-color: #fff;
+  padding: 20px 39px 19px 38px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  width: 250px;
+  height: 299px;
+}
+
+.teamImageWrapper {
+  width: 175px;
+  height: 175px;
+  margin: 0 auto 19px;
+  border: 4px solid #eee;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamImageWrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.teamName {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 125%;
+  margin-bottom: 17px;
+  color: #212529;
+  text-align: left;
+}
+
+.teamRole {
+  font-size: 15px;
+  font-weight: 400;
+  color: #212529bf;
+  line-height: 125%;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.teamViewBtn {
+  display: inline-block;
+  padding: 13px 32.5px 10px 33.5px;
+  background-color: #212529;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 125%;
+}
+
+/* Footer */
+.footer {
+  background-color: #74c69d;
+  padding: 30px 0;
+  color: #fff;
+}
+
+.footer .container {
+  padding: 0 16px;
+}
+
+.footerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 51px auto 49px auto;
+}
+
+.socialList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+.socialList li {
+  padding-right: 20px;
+}
+.socialList li:last-child {
+  padding-right: 0;
+}
+
+.socialList li a img {
+  display: block;
+}
+
+.footerCopyright {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+@media (max-width: 991px) {
+  .contentImage1 {
+    padding-right: 0px;
+    /* height: 331.43px; */
+    /* width: 460px; */
+  }
+  .contentImage2 {
+    padding-left: 0px;
+    /* height: 331.43px; */
+    /* width: 460px; */
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navbar .container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .navbarMenu {
+    display: none;
+  }
+  .navbarNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbarLogo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .navbarLogoImage {
+    width: 45px;
+    height: 31.06px;
+    margin-right: 10px;
+  }
+
+  .navbarLogoImage img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .navbarLogo span {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 125%;
+    letter-spacing: 0px;
+  }
+
+  .hamburger {
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .hamburger img {
+    width: 24px;
+    height: 24px;
+  }
+  .banner .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 40.39px;
+    margin-bottom: 0px;
+  }
+
+  .bannerIllustration {
+    order: -1;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .bannerIllustration img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .bannerTextContent {
+    padding: 0;
+    flex: 1 1 100%;
+  }
+  .bannerWelcome {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 5px;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  .bannerHeading {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 125%;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+
+  .bannerDescription {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+
+  .bannerExploreBtn {
+    padding: 13px 47.5px 10px 48.5px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 125%;
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .partnersSection .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 59.55px;
+  }
+
+  .partnersHeader {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+  .partnersLabel {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 5px;
+    margin-bottom: 16px;
+    padding-top: 22px;
+  }
+
+  .partnersTitle {
+    font-size: 24px;
+    line-height: 125%;
+    font-weight: 700;
+    letter-spacing: 0px;
+    margin-bottom: 16px;
+  }
+
+  .partnersDescription {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 125%;
+    letter-spacing: 0px;
+    color: #000;
+  }
+
+  .partnersLogos {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 55px;
+  }
+
+  .partnersLogos img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .partnersButtonWrapper {
+    margin-top: 40px;
+  }
+
+  .partnersLearnMoreBtn {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 125%;
+    padding: 13px 29.5px 10px 29.5px;
+  }
+  .contentSection .container {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
+  .contentBlock {
+    flex-direction: column;
+    text-align: left;
+    padding-bottom: 0px;
+  }
+
+  .contentBlock.reverse {
+    flex-direction: column;
+  }
+
+  .contentImage1,
+  .contentImage2 {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .contentImage1 img,
+  .contentImage2 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .contentText {
+    padding: 0;
+  }
+
+  .contentTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .contentDescription {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .contentBtn {
+    font-size: 16px;
+    padding: 13px 29.5px 10px 29.5px;
+  }
+  .contentBlock .contentBtn {
+    margin-bottom: 60.12px;
+  }
+  .contentBlock.reverse .contentBtn {
+    margin-bottom: 40.13px;
+  }
+  .teamSection .container {
+    margin-bottom: 0px;
+  }
+  .teamTitle {
+    font-size: 24px;
+  }
+
+  .teamDescription {
+    font-size: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .teamHeader {
+    margin-bottom: 41px;
+  }
+
+  .teamList {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 9px;
+  }
+
+  .teamCard {
+    width: 279px;
+    max-width: 300px;
+    height: 299px;
+    margin-bottom: 35px;
+  }
+  .teamImageWrapper {
+    padding: 20px 13.5px 19px 13.5px;
+  }
+  .teamName {
+    font-size: 24px;
+    margin-bottom: 17px;
+  }
+  .teamList {
+    gap: 0px;
+  }
+
+  .teamViewBtn {
+    font-size: 20px;
+    padding: 13px 29.5px 10px 29.5px;
+    margin-bottom: 39px;
+  }
+  .footer .container {
+    padding: 31px auto;
+  }
+  .footerWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .socialList {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+  }
+
+  .footerCopyright {
+    font-size: 20px;
+  }
+}
