@@ -1,3 +1,10 @@
+body {
+  font-family: "Work Sans", sans-serif;
+}
+h1,
+h2 {
+  font-family: "Crimson Text", serif;
+}
 .navbar {
   background-color: #74c69d;
 }
