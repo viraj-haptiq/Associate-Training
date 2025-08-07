@@ -5,8 +5,8 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { loginUser } from "../store/authSlice";
 
 const LoginPage = () => {
-  const [username, setUsername] = useState("emilys");
-  const [password, setPassword] = useState("emilyspass");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const location = useLocation();
