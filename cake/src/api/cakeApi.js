@@ -199,7 +199,6 @@ export const fetchSimilarProducts = ({
       const similar = allProducts
 
         .filter((p) => p.category === category)
-
         .filter((p) => p.id !== parseInt(currentProductId))
 
         .slice(0, limit);
