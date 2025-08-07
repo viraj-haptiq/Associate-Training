@@ -4,6 +4,7 @@ import { useWishlist } from "../context/WishlistContext";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleCart, selectCartItemCount } from "../store/cartSlice";
 import { logout } from "../store/authSlice";
+
 const Navbar = () => {
   const { wishlistItems } = useWishlist();
   const dispatch = useDispatch();
