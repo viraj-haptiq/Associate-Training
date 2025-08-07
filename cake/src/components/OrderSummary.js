@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { selectCartItems, selectCartTotal } from "../store/cartSlice";
-
+import { parsePrice } from "../utils/priceParser";
 const OrderSummary = () => {
   const cartItems = useSelector(selectCartItems);
   const cartTotal = useSelector(selectCartTotal);
@@ -17,10 +17,7 @@ const OrderSummary = () => {
             <span>Qty: {item.quantity}</span>
           </div>
           <p className="summary-item-price">
-            ₹
-            {(
-              parseFloat(item.product.price.replace("₹", "")) * item.quantity
-            ).toFixed(2)}
+            ₹{(parsePrice(item.product.price) * item.quantity).toFixed(2)}
           </p>
         </div>
       ))}
