@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from "react";
 import ProductCard from "./ProductCard";
 import { fetchProductsByCategory } from "../../api/cakeApi";
 import { parsePrice } from "../../utils/priceParser";
+
 const filterConfig = {
   icing: [
     { key: "all", label: "All Flavours" },
