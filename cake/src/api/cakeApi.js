@@ -205,7 +205,7 @@ export const fetchSimilarProducts = ({
 
         .filter((p) => p.id !== parseInt(currentProductId))
 
-        .slice(0, 4);
+        .slice(0, limit);
       resolve(similar);
     }, 300);
   });
