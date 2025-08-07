@@ -1,5 +1,5 @@
 import { createSlice, createSelector } from "@reduxjs/toolkit";
-
+import { parsePrice } from "../utils/priceParser";
 const initialState = {
   items: [],
   isCartOpen: false,
@@ -45,7 +45,6 @@ const cartSlice = createSlice({
       if (item && item.quantity > 1) {
         item.quantity--;
       } else {
-        // If quantity is 1, remove the item from the cart
         state.items = state.items.filter(
           (item) => item.product.id !== action.payload
         );
@@ -73,7 +72,7 @@ export const selectCartItemCount = createSelector(
 
 export const selectCartTotal = createSelector([selectCartItems], (cartItems) =>
   cartItems.reduce((total, item) => {
-    const price = parseFloat(item.product.price.replace("₹", ""));
+    const price = parsePrice(item.product.price);
     return total + price * item.quantity;
   }, 0)
 );
