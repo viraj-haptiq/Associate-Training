@@ -52,13 +52,6 @@ const cartSlice = createSlice({
       }
     },
   },
-  // extraReducers: (builder) => {
-  //   builder.addCase(logout, (state) => {
-  //     // When the logout action is dispatched, reset the cart state
-  //     state.items = [];
-  //     state.isCartOpen = false;
-  //   });
-  // },
 });
 
 export const {
