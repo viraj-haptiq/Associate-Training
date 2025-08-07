@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { selectCartItems, selectCartTotal } from "../store/cartSlice";
 import { parsePrice } from "../utils/priceParser";
+
 const OrderSummary = () => {
   const cartItems = useSelector(selectCartItems);
   const cartTotal = useSelector(selectCartTotal);

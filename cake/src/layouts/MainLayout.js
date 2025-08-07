@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CartSidebar from "../components/CartSidebar";
 import { WishlistProvider } from "../context/WishlistContext";
+
 const MainLayout = () => {
   return (
     <WishlistProvider>
