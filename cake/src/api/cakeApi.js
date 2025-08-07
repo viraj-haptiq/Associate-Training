@@ -1,5 +1,4 @@
 const allProducts = [
-  // Icing Cakes
   {
     id: 101,
     name: "Chocolate Truffle",
@@ -85,7 +84,6 @@ const allProducts = [
     image: "/images/milk-chocolate.jpeg",
   },
 
-  // Plain Cakes
   {
     id: 201,
     name: "Classic Vanilla",
@@ -136,7 +134,6 @@ const allProducts = [
     image: "/images/chocolate-chocochips.jpeg",
   },
 
-  // Customised Cakes
   {
     id: 301,
     name: "Wedding Tier Cake",
