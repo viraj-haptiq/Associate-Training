@@ -1,5 +1,6 @@
 import { createSlice, createSelector } from "@reduxjs/toolkit";
 import { parsePrice } from "../utils/priceParser";
+
 const initialState = {
   items: [],
   isCartOpen: false,
