@@ -5,9 +5,10 @@ import { useDispatch } from "react-redux";
 import SimilarProducts from "../components/SimilarProducts";
 import { addToCart } from "../store/cartSlice";
 import { useWishlist } from "../context/WishlistContext";
-
-const ICING_SIMILAR_PRODUCTS_LIMIT = 3;
-const DEFAULT_SIMILAR_PRODUCTS_LIMIT = 4;
+import {
+  ICING_SIMILAR_PRODUCTS_LIMIT,
+  DEFAULT_SIMILAR_PRODUCTS_LIMIT,
+} from "../config/constants";
 
 const ProductDetailPage = () => {
   const { productId } = useParams();
