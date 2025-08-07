@@ -14,18 +14,11 @@ const categories = [
     image: "/images/plain-cake.jpeg",
     path: "/category/plain",
   },
-  // {
-  //   id: 3,
-  //   name: "Cupcakes",
-  //   image:
-  //     "https://images.unsplash.com/photo-1614707267537-b85aaf00c8b7?q=80&w=1974&auto=format&fit=crop",
-  //   path: "/category/cupcake", // Assuming cupcakes are a type of icing cake for this example
-  // },
   {
     id: 4,
     name: "Customised Cakes",
     image: "/images/customised-cake.jpeg",
-    path: "/category/customised", // Add path property
+    path: "/category/customised",
   },
 ];
 
