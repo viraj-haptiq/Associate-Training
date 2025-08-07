@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import ProductCard from "./ProductCard";
 import { fetchProductsByCategory } from "../../api/cakeApi";
-
+import { parsePrice } from "../../utils/priceParser";
 const filterConfig = {
   icing: [
     { key: "all", label: "All Flavours" },
@@ -72,15 +72,11 @@ const ProductListPage = ({ category }) => {
     const sortableProducts = [...filteredProducts];
     if (sortOrder === "price-asc") {
       sortableProducts.sort(
-        (a, b) =>
-          parseFloat(a.price.replace("₹", "")) -
-          parseFloat(b.price.replace("₹", ""))
+        (a, b) => parsePrice(a.price) - parsePrice(b.price)
       );
     } else if (sortOrder === "price-desc") {
       sortableProducts.sort(
-        (a, b) =>
-          parseFloat(b.price.replace("₹", "")) -
-          parseFloat(a.price.replace("₹", ""))
+        (a, b) => parsePrice(b.price) - parsePrice(a.price)
       );
     }
     return sortableProducts;
