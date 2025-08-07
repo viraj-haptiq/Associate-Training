@@ -20,7 +20,7 @@ const AddressForm = () => {
           type="text"
           id="address"
           name="address"
-          placeholder=""
+          placeholder="enter your full address"
           required
         />
       </div>
