@@ -192,7 +192,11 @@ export const fetchProductById = (productId) => {
     }, 300);
   });
 };
-export const fetchSimilarProducts = ({ category, currentProductId, limit }) => {
+export const fetchSimilarProducts = ({
+  category,
+  currentProductId,
+  limit = 4,
+}) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       const similar = allProducts
