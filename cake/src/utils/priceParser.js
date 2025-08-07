@@ -7,7 +7,7 @@ export const parsePrice = (priceString) => {
 
   const parts = numericString.split(".");
   if (parts.length > 1) {
-    numericString = parts[0] + "." + parts[1];
+    numericString = parts[0] + "." + parts.slice(1).join("");
   }
 
   return parseFloat(numericString) || 0;
