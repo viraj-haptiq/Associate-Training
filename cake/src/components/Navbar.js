@@ -10,7 +10,7 @@ const Navbar = () => {
   const cartItemCount = useSelector(selectCartItemCount);
   const [searchTerm, setSearchTerm] = useState("");
   const { isAuthenticated, user } = useSelector((state) => state.auth);
-  const navigate = useNavigate(); //
+  const navigate = useNavigate();
   const handleSearchSubmit = (e) => {
     e.preventDefault();
     if (searchTerm.trim()) {
