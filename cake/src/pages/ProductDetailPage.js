@@ -6,6 +6,9 @@ import SimilarProducts from "../components/SimilarProducts";
 import { addToCart } from "../store/cartSlice";
 import { useWishlist } from "../context/WishlistContext";
 
+const ICING_SIMILAR_PRODUCTS_LIMIT = 3;
+const DEFAULT_SIMILAR_PRODUCTS_LIMIT = 4;
+
 const ProductDetailPage = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
@@ -21,7 +24,10 @@ const ProductDetailPage = () => {
       const productData = await fetchProductById(productId);
       setProduct(productData);
       if (productData) {
-        const limit = productData.category === "icing" ? 3 : 4;
+        const limit =
+          productData.category === "icing"
+            ? ICING_SIMILAR_PRODUCTS_LIMIT
+            : DEFAULT_SIMILAR_PRODUCTS_LIMIT;
 
         const similarData = await fetchSimilarProducts({
           category: productData.category,
