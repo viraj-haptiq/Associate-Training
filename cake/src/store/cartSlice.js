@@ -46,9 +46,7 @@ const cartSlice = createSlice({
       if (item && item.quantity > 1) {
         item.quantity--;
       } else {
-        state.items = state.items.filter(
-          (item) => item.product.id !== action.payload
-        );
+        return cartSlice.caseReducers.removeFromCart(state, action);
       }
     },
   },
