@@ -197,10 +197,9 @@ export const fetchSimilarProducts = ({
   return new Promise((resolve) => {
     setTimeout(() => {
       const similar = allProducts
-
-        .filter((p) => p.category === category)
-        .filter((p) => p.id !== parseInt(currentProductId))
-
+        .filter(
+          (p) => p.category === category && p.id !== parseInt(currentProductId)
+        )
         .slice(0, limit);
       resolve(similar);
     }, 300);
