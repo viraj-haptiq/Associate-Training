@@ -8,12 +8,21 @@ export const useWishlist = () => {
 
 export const WishlistProvider = ({ children }) => {
   const [wishlistItems, setWishlistItems] = useState(() => {
-    const savedWishlist = localStorage.getItem("wishlist");
-    return savedWishlist ? JSON.parse(savedWishlist) : [];
+    try {
+      const savedWishlist = localStorage.getItem("wishlist");
+      return savedWishlist ? JSON.parse(savedWishlist) : [];
+    } catch (error) {
+      console.error("Failed to access localStorage:", error);
+      return [];
+    }
   });
 
   useEffect(() => {
-    localStorage.setItem("wishlist", JSON.stringify(wishlistItems));
+    try {
+      localStorage.setItem("wishlist", JSON.stringify(wishlistItems));
+    } catch (error) {
+      console.error("Failed to save to localStorage:", error);
+    }
   }, [wishlistItems]);
 
   const addToWishlist = (product) => {
