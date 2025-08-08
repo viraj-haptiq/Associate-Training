@@ -12,6 +12,7 @@ import SearchPage from "../pages/SearchPage";
 import LoginPage from "../pages/LoginPage";
 import CheckoutPage from "../pages/CheckoutPage";
 import AboutUs from "../pages/AboutUs";
+import OrderSuccessPage from "../pages/OrderSuccessPage";
 
 export const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ export const router = createBrowserRouter([
             element: <CheckoutPage />,
           },
         ],
+      },
+      {
+        path: "order-success",
+        element: <OrderSuccessPage />,
       },
     ],
   },
