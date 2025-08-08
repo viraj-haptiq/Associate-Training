@@ -1,14 +1,9 @@
 export const parsePrice = (priceString) => {
-  if (typeof priceString !== "string") {
+  if (typeof priceString !== "string" || !priceString.trim()) {
     return 0;
   }
 
-  let numericString = priceString.replace(/[^0-9.]/g, "");
+  const match = priceString.match(/(\d{1,3}(,\d{3})*(\.\d+)?|\d+(\.\d+)?)/);
 
-  const parts = numericString.split(".");
-  if (parts.length > 1) {
-    numericString = parts[0] + "." + parts.slice(1).join("");
-  }
-
-  return parseFloat(numericString) || 0;
+  return match ? parseFloat(match[0].replace(/,/g, "")) : 0;
 };
